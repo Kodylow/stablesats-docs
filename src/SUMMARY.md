@@ -13,7 +13,7 @@
 - [Stablesats: GaloyMoney's Open Source SynthUSD Implementation](galoy_stablesats.md)
   - [Background on the Stablesats Implementation](galoy/background.md)
 - [stablesats-rs : How it Works and How to Change It](stablesats_rust.md)
-  - [Technical Docs: the Current Architecture](sats_rust/architecture.md)
+  - [The Current Architecture](sats_rust/architecture.md)
   - [How to Decouple the Galoy Backend](sats_rust/decoupling.md)
     - [Pointing the user-trades module's `dealer` at a new USD Target Liability](sats_rust/decoupling_user_trades.md)
     - [How stablesats' internal `ledger` Works](sats_rust/decoupling_ledger.md)
