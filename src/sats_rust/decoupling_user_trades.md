@@ -207,7 +207,14 @@ loop {
 
 That find_unaccounted_trade function is an sqlx query that will find a single user trade that hasn't been accounted for yet and mark it as being accounted for so that it doesn't get polled again. Doing it this way allows for effective and efficient locking around individual transactions as they get updated in the db.
 
-Once the trade get accounted for, we call into the `ledger` module.
+## So how do we decouple this user_trades module from the Galoy Backend?
 
-#### How do you decouple from the Galoy Backend? You have to adjust from poll_galoy_transactions up to this point. If at this point you format the data to match what the ledger module is expecting in the `user_buys_usd` and `user_sells_usd` methods, it can operate, manage, and run the USD-target-liability hedging (basically) untouched because the ledger module is what triggers the downstream hedging
+You have to adjust everything from `poll_galoy_transactions` up to this `update_ledger` loop. If at this point you format the data to match what the ledger module is expecting in the `user_buys_usd` and `user_sells_usd` methods, it can operate, manage, and run the USD-target-liability hedging (basically) untouched because the ledger module is what triggers the downstream hedging.
 
+You need a timestamp, btc_tx_id, and usd_tx_id for the metadata to add to the ledger which you can get from whatever backend you decide to use (for your external referencing back to the bitcoin wallet you're using for the balances).
+
+You can do this from a different module in the same stablesats structure, you're allowed to import the ledger into different places, and if you call `ledger.user_buys_usd` or `ledger.user_sells_usd` then everything downstream of that on the target USD Liability side should "just work".
+
+## Recap
+
+Copy the 20 lines of code in that `poll_galoy_transactions.rs`'s `update_ledger` loop around `ledger.user_buys_usd` & `ledger.user_sells_usd`, put them in a different module, get the necessary usd-liability and bitcoin balance information from your backend and fit it into the type structure for the ledger. The rust compiler will be your friend here.
