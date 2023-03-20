@@ -1,6 +1,6 @@
 # Decoupling the Bitcoin Wallet
 
-Decoupling the bitcoin wallet will be significantly less work than decoupling the target usd liability in ledger and user_trades. You basically just need to hook in spend and receives for a standard bitcoin wallet at the places where the hedging module moves funds in and out of OKX for the margin requirements.
+Decoupling the bitcoin wallet will be significantly less work than decoupling the target usd liability in ledger and user_trades. You basically just need to hook in spend and receives for a standard bitcoin wallet instead of the GaloyClient's bitcoin wallet at the places where the hedging module moves funds in and out of OKX for the margin requirements.
 
 ## The `adjust_funding` job
 

@@ -17,5 +17,4 @@
   - [How to Decouple the Galoy Backend](sats_rust/decoupling.md)
     - [Getting the USD Target Liability](sats_rust/decoupling_user_trades.md)
     - [How stablesats' internal `ledger` Works](sats_rust/decoupling_ledger.md)
-    - [Using a Different Bitcoin Wallet](sats_rust/bitcoin_wallet.md)
-- [Assorted Notes That Will Help with Decoupling](assorted_notes_decoupling.md)
+    - [Using a Different Bitcoin Wallet](sats_rust/decoupling_bitcoin_wallet.md)
