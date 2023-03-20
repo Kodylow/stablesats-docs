@@ -7,4 +7,10 @@ There are 2 points of coupling between stablesats's hedging logic and the galoy 
 
 Currently both of these are deeply coupled to the galoy backend, the USD liability being more deeply coupled and tricky than the second. We'll have to remove both these couplings to plug stablesats into a different backend or run it against a different asset.
 
-The following pages are documentation notes designed to help navigate this decoupling based of a conversation with @jcarter, GaloyMoney's CTO and the architect/maintainer of stablesats-rs.
+## Current Architecture
+
+`stablesats-rs`
+
+![stablesats structure](../images/stablesats_structure.png)
+
+The following pages are documentation notes designed to help navigate how you could most effectively go about decoupling galoy's backend from stablesats based off of a conversation with @jcarter, GaloyMoney's CTO and the architect/maintainer of stablesats-rs.
