@@ -1,4 +1,6 @@
-# Summary
+# Synthetic USD on Bitcoin with Stablesats
+
+## Structure of this Documentation
 
 - [Introduction](introduction.md)
 - [Synthetic USD Conceptual Overview](overview.md)
@@ -9,6 +11,7 @@
   - [Hedging Strategies via Coin Margined Futures Contracts and Derivatives](overview/hedging.md)
     - [Coin Margined Trading](overview/hedging/coin_margin.md)
     - [Futures Contracts Definitions](overview/hedging/futures.md)
+    - [Price Oracles and Managing Position Sizing](overview/price_oracles.md)
     - [OKX Specific Contracts and Derivatives We Use](overview/hedging/okx_contracts.md)
 - [Stablesats: GaloyMoney's Open Source SynthUSD Implementation](galoy_stablesats.md)
   - [Background on the Stablesats Implementation](galoy/background.md)
