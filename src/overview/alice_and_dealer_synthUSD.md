@@ -11,7 +11,12 @@ We consider two scenarios:
 1. Three months after Alice's actions, the Bitcoin price falls by 50% to $15,000. Alice's Bitcoin account maintains 600,000 satoshis, now worth $90. However, her synthetic USD account, comprising the net position between the Bitcoin she moved to Dave and the value of the short position, remains worth 800,000 satoshis or $120, preserving a stable USD value through hedging.
 2. Three months after Alice's actions, the Bitcoin price surges by 100% to $60,000. Alice's Bitcoin account still has 600,000 satoshis, now worth $360. Yet, her synthetic USD account, consisting of the net position between the Bitcoin she transferred to Dave and the value of the short position, maintains a value of 200,000 satoshis or $120, ensuring a stable USD value through hedging.
 
-Dave the Dealer's physical BTC profit was +$120, and his short position loss was -$120, resulting in a Net Profit and Loss of $0. This indicates a delta-neutral trade. The Rust implementation demonstrates that the synthetic USD account's value remains stable, and Dave's trading strategy is delta-neutral.
+Dave the Dealer's physical BTC profit was +$120, and his short position loss was -$120, resulting in a Net Profit and Loss of $0. This indicates a delta-neutral trade. 
+
+![alice and bob](../images/images/alice_and_bob.png)
+
+
+The Rust implementation demonstrates that the synthetic USD account's value remains stable, and Dave's trading strategy is delta-neutral.
 
 ```rust
 use std::collections::HashMap;
