@@ -4,7 +4,7 @@
 - [Synthetic USD Conceptual Overview](overview.md)
   - [Motivation](overview/motivation.md)
   - [How the Math Works](overview/synthUSD_math.md)
-  - [An Alice and Bob Example](overview/alice_and_bob_synthUSD.md)
+  - [An Alice and Bob Example](overview/alice_and_dealer_synthUSD.md)
   - [Visualizations](overview/synthUSD_visualizations.md)
   - [Hedging Strategies via Coin Margined Futures Contracts and Derivatives](overview/hedging.md)
     - [Coin Margined Trading](overview/hedging/coin_margin.md)
