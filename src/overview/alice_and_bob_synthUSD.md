@@ -1,1 +1,1 @@
-# Alice and Bob Use Synthetic USD on Bitcoin with OKX
+# An Alice and Bob Example
