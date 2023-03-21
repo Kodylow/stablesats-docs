@@ -11,3 +11,5 @@ cd stablesats-docs
 
 mdbook serve
 ```
+
+Then navigate to localhost:3000 to see the documentation.
