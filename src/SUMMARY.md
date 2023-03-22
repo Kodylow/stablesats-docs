@@ -1,6 +1,5 @@
 # Summary
 
-- [Introduction](introduction.md)
 - [Synthetic USD Conceptual Overview](overview.md)
   - [Motivation](overview/motivation.md)
   - [How the Math Works](overview/synthUSD_math.md)

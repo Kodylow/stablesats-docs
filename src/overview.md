@@ -1,1 +1,1 @@
-# Synthetic USD Conceptual Overview
+# Synthetic USD on Bitcoin with Stablesats
