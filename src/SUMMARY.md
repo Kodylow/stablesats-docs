@@ -10,7 +10,6 @@
     - [Futures Contracts Definitions](overview/hedging/futures.md)
     - [OKX Specific Contracts and Derivatives We Use](overview/hedging/okx_contracts.md)
 - [Stablesats: GaloyMoney's Open Source SynthUSD Implementation](galoy_stablesats.md)
-  - [Background on the Stablesats Implementation](galoy/background.md)
 - [stablesats-rs : How it Works and How to Decouple the Galoy Backend](sats_rust/decoupling.md)
   - [Getting the USD Target Liability](sats_rust/decoupling_user_trades.md)
   - [How stablesats' internal `ledger` Works](sats_rust/decoupling_ledger.md)
