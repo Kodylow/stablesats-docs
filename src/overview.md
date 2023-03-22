@@ -1,1 +1,0 @@
-# Synthetic USD Conceptual Overview

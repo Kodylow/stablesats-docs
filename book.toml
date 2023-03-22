@@ -1,7 +1,0 @@
-[book]
-authors = ["kody.low"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Stablesats"
-image-folder = "images"

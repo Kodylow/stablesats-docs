@@ -1,1 +1,0 @@
-# Current Stablesats Architecture
