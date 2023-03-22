@@ -13,7 +13,7 @@ We consider two scenarios:
 
 Dave the Dealer's physical BTC profit was +$120, and his short position loss was -$120, resulting in a Net Profit and Loss of $0. This indicates a delta-neutral trade. 
 
-![alice and bob](../images/images/alice_and_bob.png)
+![alice and bob](../images/mimages/alice_and_bob.png)
 
 
 The Rust implementation demonstrates that the synthetic USD account's value remains stable, and Dave's trading strategy is delta-neutral.
