@@ -1,3 +1,5 @@
+this project is live at [kodylow.github.io/stablesats-docs](https://kodylow.github.io/stablesats-docs)
+
 # Getting started
 
 This documentation uses `mdbook` , [which you can download here](https://rust-lang.github.io/mdBook/guide/installation.html)
