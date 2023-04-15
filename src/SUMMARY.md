@@ -1,7 +1,6 @@
 # Summary
 
 - [Synthetic USD Conceptual Overview](overview.md)
-  - [Motivation](overview/motivation.md)
   - [How the Math Works](overview/synthUSD_math.md)
   - [An Alice and Bob Example](overview/alice_and_dealer_synthUSD.md)
   - [Visualizations](overview/synthUSD_visualizations.md)
